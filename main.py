@@ -14,12 +14,11 @@ while running:
   for event in pygame.event.get(): 
     if event.type == pygame.QUIT: 
         running = False 
-    #game
-    game.draw()
-  
-  
-  
-    pygame.display.flip()
+
+  game.update()
+  game.draw()
+
+  pygame.display.flip()
 
 
 pygame.quit()
